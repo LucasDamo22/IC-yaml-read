@@ -8,12 +8,12 @@
 #define RYML_SINGLE_HDR_DEFINE_NOW
 #include "ryml_all.hpp"
 
-int main()
+int main(int argc, char** argv)
 {
 
     Processor cpu1 = Processor();
     Processor cpu2 = Processor();
-    std::string contents = get_file_contents("./data/processes.yaml");
+    std::string contents = get_file_contents(argv[1]);
     ryml::Tree tree = ryml::parse_in_place(ryml::to_substr(contents));
 
     ryml::NodeRef processos = tree["Processos"];

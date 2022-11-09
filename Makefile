@@ -1,7 +1,7 @@
 OUTPUTDIR :=./bin
 SOURCEDIR :=./src
 HEADERDIR :=./include
-PROGRAM_NAME = main
+PROGRAM_NAME = reader
 
 CXXFLAGS  +=-Iinclude
 
